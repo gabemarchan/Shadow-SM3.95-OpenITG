@@ -58,12 +58,14 @@ function SSMCourseLocText( actor )
    local text = ""
    local short = ""
    if course then
-	local fulldir = course:GetCourseDir();
-	if string.find(fulldir, "@mc1") or string.find(fulldir, "@mc2") then
-	short = string.sub(fulldir, 7, -5);
-	else
-	short = string.sub(fulldir, 2, -5);
-	end
+      if OpenITG then
+	   local fulldir = course:GetCourseDir();
+	   if string.find(fulldir, "@mc1") or string.find(fulldir, "@mc2") then
+	   short = string.sub(fulldir, 7, -5);
+	   else
+	   short = string.sub(fulldir, 2, -5);
+	   end
+   end
 	end
 	text = short
 
