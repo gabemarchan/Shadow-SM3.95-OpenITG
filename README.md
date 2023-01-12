@@ -12,9 +12,12 @@ If you encounter a game breaking issue, feel free to report it and I'll see if I
 
 
 ## Supported Versions of StepMania
+
+The Shadow Theme is compatible with older releases from the official StepMania project, and current releases of the OpenITG project.
+
+**Compatible Releases**<br>
 ✅ StepMania 3.95
 ✅ OpenITG
-✅ In The Groove 2
 
 
 **Incompatible**<br>
