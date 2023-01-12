@@ -812,17 +812,23 @@ local course = GAMESTATE:GetCurrentCourse();
 	if song then
 	actor:diffuse(0.8,1,0.8,0.5)
 
-	if song:IsCustomSong() then
-	actor:diffuse(0.85,0.85,0.85,0.85)
-	end
+   if OpenITG then
+      if song:IsCustomSong() then
+      actor:diffuse(0.85,0.85,0.85,0.85)
+      end
+   end
 
-	if song:IsLong() then
-	actor:diffuse(0,0.7,1,0.8)
-	end
+   if OpenITG then
+      if song:IsLong() then
+      actor:diffuse(0,0.7,1,0.8)
+      end
+   end
 
-	if song:IsMarathon() then
-	actor:diffuse(1,0.25,0.25,1)
-	end
+	if OpenITG then
+      if song:IsMarathon() then
+	   actor:diffuse(1,0.25,0.25,1)
+	   end
+   end
 
 	end
 
@@ -837,9 +843,11 @@ local song = GAMESTATE:GetCurrentSong();
 	if song then
 	actor:hidden(1)
 
-	if song:IsCustomSong() then
-	actor:hidden(0)
-	end
+   if OpenITG then
+	   if song:IsCustomSong() then
+	   actor:hidden(0)
+	   end
+   end
 
 	end
 end
