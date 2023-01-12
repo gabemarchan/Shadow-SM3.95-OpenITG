@@ -16,8 +16,8 @@ If you encounter a game breaking issue, feel free to report it and I'll see if I
 The Shadow Theme is compatible with older releases from the official StepMania project, and current releases of the OpenITG project.
 
 **Compatible Releases**<br>
-✅ StepMania 3.95
-✅ OpenITG
+✅ StepMania 3.95<br>
+✅ OpenITG<br>
 
 
 **Incompatible**<br>
