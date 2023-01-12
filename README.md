@@ -1,4 +1,4 @@
-# Shadow theme for StepMania 3.95 and OpenITG
+# Shadow Theme for StepMania 3.95 and OpenITG
 
 ## About
 
