@@ -33,7 +33,7 @@
 	 <Layer
 		Type="BitmapText"
 		Font="_eurostile outline"
-		Text="@'Machine Owned And\nModded By DarkLink'"
+		Text="@'Theme by DarkLink'"
 		InitCommand="x,SCREEN_CENTER_X-296;y,SCREEN_CENTER_Y-172;shadowlength,0;horizalign,left;zoom,0.65"
 		OnCommand="diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
 	/>
