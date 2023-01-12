@@ -22,7 +22,7 @@ The Shadow Theme is compatible with older releases from the official StepMania p
 
 **Incompatible**<br>
 ❌ StepMania 5 (e.g. StepMania 5.0.12, 5.1-b2, 5.2)<br>
-❌ Older versions of StepMania (e.g. StepMania 3.9)<br>
+❌ Much older versions of StepMania (e.g. StepMania 3.9)<br>
 ❌ Forks of older versions of StepMania/OpenITG (e.g. NotITG)<br>
 
 
