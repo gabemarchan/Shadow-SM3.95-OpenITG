@@ -150,5 +150,5 @@
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="THANK YOU FOR PLAYING!" File="_eurostile blue glow" OnCommand="zoomx,0.8;zoomy,0.7;diffuse,#FFFFFF;ztest,1" />
-</children>  <!-- JESUS -EATS- THE LITTLE CHILDREN /* -->
+</children>
 </BGAnimation>
