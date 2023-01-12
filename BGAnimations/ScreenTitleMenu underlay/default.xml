@@ -1,0 +1,48 @@
+<ActorFrame><children>
+	<Layer File="music_flashes" />
+	<Layer
+		File="../ScreenLogo underlay/overlay"
+		InitCommand="x,SCREEN_CENTER_X+0;y,SCREEN_CENTER_Y-5"
+		OnCommand="diffusealpha,0;sleep,.7;diffusealpha,1;ZoomX,1.5;ZoomY,4;BounceEnd,.14;Zoom,0.85;glowshift;EffectColor1,1,1,1,0.05;EffectColor2,1,1,1,0;playcommand,Pulse"
+		PulseCommand="pulse;effectmagnitude,1,0.98,0;effectperiod,0.4"
+	/>
+	<Layer
+		File="../ScreenLogo underlay/andamiro"
+		OnCommand="x,SCREEN_LEFT+60;y,SCREEN_TOP+30;diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
+	/>
+	<Layer
+		File="../ScreenLogo underlay/roxor"
+		OnCommand="x,SCREEN_LEFT+200;y,SCREEN_TOP+30;diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
+	/>
+	<Layer
+		Type="BitmapText"
+		Condition="Platform() == 'arcade'"
+		Font="_eurostile blue glow"
+		Text="r1337. The Awesome Revision. (^^)"
+		OnCommand="x,SCREEN_CENTER_X-122;y,SCREEN_BOTTOM-17;zoom,0.5;shadowlength,2;horizalign,left;diffusealpha,1.0"
+	/> 
+	<Layer
+		Type="BitmapText"
+		Font="ScreenOptions serial number"
+		Condition="Platform() == 'arcade'"
+		Text="@GetSerialNumberDisplay()"
+		InitCommand="x,SCREEN_CENTER_X+265;y,SCREEN_CENTER_Y-213;shadowlength,2;horizalign,right;wrapwidthpixels,1000;zoom,0.5"
+		OnCommand="diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
+		OffCommand="accelerate,0.5;addy,-100"
+	/>
+	 <Layer
+		Type="BitmapText"
+		Font="_eurostile outline"
+		Text="@'Machine Owned And\nModded By DarkLink'"
+		InitCommand="x,SCREEN_CENTER_X-296;y,SCREEN_CENTER_Y-172;shadowlength,0;horizalign,left;zoom,0.65"
+		OnCommand="diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
+	/>
+
+	<Layer
+        File="icon"
+		OffCommand="accelerate,0.5;addy,-100"
+		OnCommand="y,SCREEN_CENTER_Y-210"
+
+    /> 
+
+</children></ActorFrame>

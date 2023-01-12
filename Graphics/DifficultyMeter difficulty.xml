@@ -1,0 +1,5 @@
+<BitmapText
+	Text=""
+	Font="_club heavy"
+	InitCommand="zoom,0.5" 
+/>

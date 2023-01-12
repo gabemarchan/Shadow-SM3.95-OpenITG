@@ -1,0 +1,19 @@
+<ActorFrame><children>
+
+	<AutoActor File="../_join overlay" />
+   <Layer
+   	File="../menu timer"
+   	InitCommand="y,SCREEN_TOP+42;x,SCREEN_RIGHT-80"
+   />
+	<Quad
+      MadeChoiceP1MessageCommand="playcommand,GoOff"
+		MadeChoiceP2MessageCommand="playcommand,GoOff"
+		GoOffCommand="queuemessage,CautionGoOff"
+		OnCommand="queuemessage,CautionIsOn"
+	/>
+	<Layer
+		File="../caution"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-100"
+	/>
+
+</children></ActorFrame>

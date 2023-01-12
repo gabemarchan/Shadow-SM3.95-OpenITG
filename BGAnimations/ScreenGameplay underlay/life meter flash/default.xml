@@ -1,0 +1,26 @@
+<ActorFrame><children>
+
+<ActorFrame InitCommand="x,SCREEN_CENTER_X-296" 
+			OnCommand="zoomy,0;sleep,0.7;accelerate,0.5;zoomy,1" 
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"><children>
+	<AutoActor
+			File="stepflash" 
+			InitCommand="diffuseshift;effectclock,bgm;effectperiod,1;effectcolor1,1,1,1,0.6;effectcolor2,0,0,0,0"
+			OnCommand="addx,-100;sleep,0.5;decelerate,0.8;addx,160;accelerate,0.3;addx,-60"
+			OffCommand="accelerate,0.8;addx,-100"
+/>
+
+</children></ActorFrame>
+
+<ActorFrame InitCommand="x,SCREEN_CENTER_X+296" 
+			OnCommand="zoomy,0;sleep,0.7;accelerate,0.5;zoomy,1"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"><children>
+	<AutoActor
+			File="stepflash" 
+			InitCommand="diffuseshift;effectclock,bgm;effectperiod,1;effectcolor1,1,1,1,0.6;effectcolor2,0,0,0,0"
+			OnCommand="addx,100;sleep,0.5;decelerate,0.8;addx,-160;accelerate,0.3;addx,60"
+			OffCommand="accelerate,0.8;addx,100"
+/>
+</children></ActorFrame>
+
+</children></ActorFrame>

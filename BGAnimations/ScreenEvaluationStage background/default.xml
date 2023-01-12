@@ -1,0 +1,8 @@
+<ActorFrame>
+<children>
+<Layer
+ File="songbackground"
+ InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;faderight,0;fadeleft,.0;diffusealpha,1"
+/>
+</children>
+</ActorFrame>

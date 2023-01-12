@@ -1,0 +1,14 @@
+<ActorFrame><children>	
+	
+<AutoActor
+Condition="OPENITG == true"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-112"
+File="oitg-full"
+/>
+
+<Layer
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-115;zoom,0.4;"
+File="../ScreenLogo underlay/overlay"
+/>
+	
+</children></ActorFrame>

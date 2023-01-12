@@ -1,0 +1,114 @@
+<ActorFrame> <children>
+   <Layer
+      Type="Quad"
+      OnCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffuse,#000000;diffusealpha,0;linear,1.5;diffusealpha,1"
+   />
+
+	<!-- Makes a skull appear in the background if you Failed Pandy-monium. =P -->
+
+   <Layer
+      File="pandemonium skull"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-14;zoom,1.2;diffusealpha,0;sleep,3;linear,1;diffusealpha,1;zoom,6;linear,2;zoom,1.0;linear,0.8;diffusealpha,0;zoom,1.1"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/Pandemonium')"
+   />
+
+   	<!-- Makes a huge smiley appear if you Failed Summer ~Speedy Mix~ =D -->
+
+   <Layer
+      File="smiley"
+	  InitCommand="diffuse,#F3F312"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-14;zoom,0.1;diffusealpha,0;sleep,3;linear,1;diffusealpha,0.6;zoom,1.6;linear,2;zoom,0.7;linear,0.8;diffusealpha,0;zoom,0.3"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 2/Summer ~Speedy Mix~')"
+   />
+
+	<!-- By Reading This, You Have Just Lost The Game. Sorry. -->
+
+    <Layer
+      File="../_dark streak"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+120;zoomx,SCREEN_WIDTH;zoomy,0;linear,0.5;zoomy,0.5;sleep,6;linear,0.5;zoomy,0"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/The Game')"
+   />
+
+    <Layer
+      Text="You Just Lost The Game!"
+	  File="_club heavy"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+120;diffusealpha,0;sleep,0.3;diffusealpha,1;cropright,1.3;faderight,0.1;sleep,0.2;linear,0.5;cropright,-0.3;sleep,5.2;linear,0.5;diffuse,0,0,0,0"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/The Game')"
+   />
+
+	<!-- Life Depleted Bar Section -->
+
+   <Layer
+      File="../_red streak"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-14;zoom,0.7;fadeleft,0.3;faderight,0.3;cropleft,1.3;cropright,-0.3;linear,1;cropleft,-0.3;zoom,1.2;linear,2;zoom,0.7;linear,0.4;zoomy,0;diffusealpha,0"
+   />
+
+      <Layer
+      File="Life Depleted"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;addx,-SCREEN_WIDTH*1.3;decelerate,0.5;addx,SCREEN_WIDTH*1.3;sleep,2;accelerate,0.5;addx,SCREEN_WIDTH*1.3"
+   /> 
+
+	<!-- Round Failed Bar Section -->
+
+   <Layer
+      File="../_green streak"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-14;zoom,0.7;fadeleft,0.3;faderight,0.3;cropleft,1.3;cropright,-0.3;sleep,2.5;linear,1;cropleft,-0.3;zoom,1.2;linear,3;zoom,0.8;linear,0.5;zoomy,0;diffusealpha,0"
+   />
+
+   <Layer
+      File="Round Failed"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;addx,-SCREEN_WIDTH*1.3;sleep,2.9;decelerate,0.5;addx,SCREEN_WIDTH*1.3;sleep,2.2;accelerate,0.5;addx,SCREEN_WIDTH*1.3"
+   />
+
+	<!-- These add the ^1, ^2 and ^3 for a split second if you Fail an ITG Vertex Song. XD -->
+
+	<!-- VerTex -->
+
+   <Layer Type="ActorFrame"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;sleep,5;"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/VerTex')">
+   <children>
+   <Layer
+      File="1"
+      OnCommand="x,282;y,-50;Zoom,0.1;diffusealpha,0;sleep,3;decelerate,1;Accelerate,.2;diffusealpha,1;zoom,0.6;sleep,1;linear,0.3;diffusealpha,0"
+   />
+   </children> </Layer>
+
+   <!-- VerTex^2 -->
+
+   <Layer Type="ActorFrame"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;sleep,5;"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 2/VerTex^2')">
+   <children>
+   <Layer
+      File="2"
+      OnCommand="x,282;y,-50;Zoom,0.1;diffusealpha,0;sleep,3;decelerate,1;Accelerate,.2;diffusealpha,1;zoom,0.6;sleep,1;linear,0.3;diffusealpha,0"
+   />
+   </children> </Layer>
+
+	<!-- VerTex^3 -->
+
+   <Layer Type="ActorFrame"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;sleep,5;"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 3/VerTex^3')">
+   <children>
+   <Layer
+      File="3"
+      OnCommand="x,282;y,-50;Zoom,0.1;diffusealpha,0;sleep,3;decelerate,1;Accelerate,.2;diffusealpha,1;zoom,0.6;sleep,1;linear,0.3;diffusealpha,0"
+   />
+   </children> </Layer>
+
+	<!-- This adds WinDEU if you fail Fuck Shit Piss. Don't ask... XD -->
+
+   <Layer Type="ActorFrame"
+	  InitCommand="zoom,1.3,draworder,1"
+      OnCommand="x,SCREEN_CENTER_X+700;y,SCREEN_CENTER_Y"
+      Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('WinDEU/Fuck Shit Piss')"
+   > <children>
+      <Layer
+         File="toasty"
+         OnCommand="sleep,0.5;linear,1.5;addx,-1200;sleep,2.0;linear,1.5;addx,1200"
+"
+      />
+   </children> </Layer>
+</children> </ActorFrame>

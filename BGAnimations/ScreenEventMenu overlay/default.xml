@@ -1,0 +1,13 @@
+<ActorFrame><children> 
+<Layer
+      File="EventMode"
+      OnCommand="x,SCREEN_CENTER_X;y,SCREEN_TOP+42;shadowlength,0;zoom,1.2;diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
+/>
+
+ <Layer
+      File="../ScreenLogo underlay/overlay.png"
+      InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-80"
+	  OnCommand="diffusealpha,0;sleep,.7;diffusealpha,1;ZoomX,1.0;ZoomY,2;BounceEnd,.14;Zoom,0.65;glowshift;EffectColor1,1,1,1,0.05;EffectColor2,1,1,1,0;playcommand,Pulse"
+      PulseCommand="pulse;effectmagnitude,1,0.98,0;effectperiod,0.4"
+/>
+</children></ActorFrame>

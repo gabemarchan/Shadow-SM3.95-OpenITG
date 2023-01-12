@@ -1,0 +1,30 @@
+<ActorFrame><children>
+	<Layer
+		Class="AutoActor"
+		File="../ScreenWithMenuElements underlay/back"
+		OnCommand="playcommand,DoOn"
+	/>
+	<ActorFrame InitCommand=""><children>
+		<Layer
+			File="char"
+			Initcommand="rotationy,0;x,SCREEN_CENTER_X+212;y,SCREEN_CENTER_Y+70"
+			OnCommand="zoom,0.2;glow,1,1,1,1;bounceend,0.3;zoom,0.5;glow,1,1,1,0"
+      	MadeChoiceP1MessageCommand="playcommand,GoOff"
+			MadeChoiceP2MessageCommand="playcommand,GoOff"
+			GoOffCommand="accelerate,0.2;rotationy,-90;diffusealpha,0"
+		/>
+	</children></ActorFrame>
+   <Layer
+		File="../ScreenSelectStyle2 underlay/explanation frame"
+		InitCommand="x,SCREEN_CENTER_X-206;y,SCREEN_CENTER_Y-36;zoom,0.6;diffuse,0.6,0.6,0.6,1"
+		OnCommand="addx,-500;decelerate,0.3;addx,500"
+      MadeChoiceP1MessageCommand="playcommand,GoOff"
+		MadeChoiceP2MessageCommand="playcommand,GoOff"
+		GoOffCommand="accelerate,0.3;addx,-500"
+	/>
+	<Layer
+		Class="AutoActor"
+		File="../ScreenWithMenuElements underlay/fore"
+		OnCommand="playcommand,DoOn"
+	/>
+</children></ActorFrame>

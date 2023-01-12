@@ -1,0 +1,32 @@
+<ActorFrame><children>
+
+<ActorFrame FOV="45" OnCommand="draworder,10"><children>
+
+<!--
+<Layer
+File="blocks"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,1"
+OnCommand="diffuse,0.8,1,0.8,0.5"
+/>
+-->
+
+
+<Layer 
+		File="blocks"
+		InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,1"
+		OnCommand="%SpecialSong"
+		OffCommand="%SpecialSong"
+		CurrentStepsP1ChangedMessageCommand="%SpecialSong"
+		/>
+
+<Layer 
+		File="customsong"
+		InitCommand="x,SCREEN_CENTER_X+2;y,SCREEN_TOP+115;zoom,0.7"
+		OnCommand="hidden,1"
+		OffCommand="hidden,1"
+		CurrentStepsP1ChangedMessageCommand="%CustomSong"
+		/>
+
+</children></ActorFrame> 
+
+</children></ActorFrame>

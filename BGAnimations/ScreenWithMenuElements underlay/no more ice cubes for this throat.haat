@@ -1,0 +1,65 @@
+	-- lights
+	Def.ActorFrame {
+		InitCommand=cmd(draworder,999;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-65;z,300;fov,30);
+		Def.ActorFrame {
+			OnCommand=cmd(rotationy,0;y,-90;zoom,0.5);
+			Def.ActorFrame {
+				InitCommand=cmd(z,-200;rotationx,30);
+				LoadActor( "box cans.txt" );
+				LoadActor( "box lights.txt" ) .. {
+					InitCommand=cmd(z,-1;diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#303030");effectcolor2,color("#FFFFFF"););
+				};
+				LoadActor( "box flares.txt" ) .. {
+					InitCommand=cmd(zbuffer,0;blend,"BlendMode_Add";diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#000000");effectcolor2,color("#FFFFFF"););
+				};
+			};
+		};
+		Def.ActorFrame {
+			OnCommand=cmd(rotationz,-5;rotationy,10;addx,90;y,-95;zoom,0.5);
+			Def.ActorFrame {
+				InitCommand=cmd(z,-200;rotationx,30);
+				LoadActor( "box cans.txt" );
+				LoadActor( "box lights.txt" ) .. {
+					InitCommand=cmd(z,-1;diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#303030");effectcolor2,color("#0066FF") );
+				};
+				LoadActor( "box flares.txt" ) .. {
+					InitCommand=cmd(zbuffer,0;blend,"BlendMode_Add";diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#000000");effectcolor2,color("#0066FF") );
+				};
+			};
+		};
+		Def.ActorFrame {
+			OnCommand=cmd(rotationz,5;rotationy,-10;addx,-90;y,-95;zoom,0.5);
+			Def.ActorFrame {
+				InitCommand=cmd(z,-200;rotationx,30);
+				LoadActor( "box cans.txt" );
+				LoadActor( "box lights.txt" ) .. {
+			   	InitCommand=cmd(z,-1;diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#303030");effectcolor2,color("#33FF00") );
+				};
+				LoadActor( "box flares.txt" ) .. {
+				   InitCommand=cmd(zbuffer,0;blend,"BlendMode_Add";diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#000000");effectcolor2,color("#33FF00") );
+				};
+			};
+		};
+		Def.ActorFrame {
+			OnCommand=cmd(rotationz,-10;rotationy,20;addx,180;y,-115;zoom,0.5);
+			Def.ActorFrame {
+				InitCommand=cmd(z,-200;rotationx,30);
+				LoadActor( "box cans.txt" );
+				LoadActor( "box lights.txt" ) .. {
+					InitCommand=cmd(z,-1;diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#303030");effectcolor2,color("#FFCC33") );
+				};
+				LoadActor( "box flares.txt" ) .. {
+					InitCommand=cmd(zbuffer,0;blend,"BlendMode_Add";diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#000000");effectcolor2,color("#FFCC33") );
+				};
+			};
+		};
+		Def.ActorFrame {
+			OnCommand=cmd(rotationz,10;rotationy,-20;addx,-180;y,-115;zoom,0.5);
+			Def.ActorFrame {
+				InitCommand=cmd(z,-200;rotationx,30);
+				LoadActor( "box cans.txt" );
+				LoadActor( "box lights.txt" ) .. {
+					InitCommand=cmd(z,-1;diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#303030");effectcolor2,color("#CC0000") );
+				};
+				LoadActor( "box flares.txt" ) .. {
+					InitCommand=cmd(zbuffer,0;blend,"BlendMode_Add";diffuseshift;effecttiming,0.2,0,1.8,0;effectclock,"beat";effectoffset,-0.7;effectcolor1,color("#000000");effectcolor2,color("#CC0000") );

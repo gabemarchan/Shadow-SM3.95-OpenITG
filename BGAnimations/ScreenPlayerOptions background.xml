@@ -1,0 +1,193 @@
+<ActorFrame><children>
+
+<ActorFrame FOV="45" OnCommand="draworder,10"><children>
+
+<!-- Shared Background Called Here to Help Prevent LAG -->
+
+<!-- Normal Song -->
+<Layer
+Condition="not GAMESTATE:GetCurrentSong():IsLong() or not GAMESTATE:GetCurrentSong():IsMarathon() or not GAMESTATE:GetCurrentSong():IsCustomSong()"
+File="_shared background normal/blocks.avi"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,1"
+OnCommand="diffuse,0.8,1,0.8,0.5"
+/>
+
+<!-- Course -->
+<Layer
+Condition="GAMESTATE:IsCourseMode()"
+File="_shared background normal/blocks.avi"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,1"
+OnCommand="diffuse,0.8,1,0.8,0.5"
+/>
+
+<!-- Long Version -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong():IsLong()"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,0.45"
+OnCommand="diffuse,0,0.7,1,0.8"
+OffCommand="linear,1;diffusealpha,0"
+/>
+
+<!-- Marathon Version -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong():IsMarathon()"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,0.45"
+OnCommand="diffuse,1,0.25,0.25,1"
+OffCommand="linear,1;diffusealpha,0"
+/>
+
+<!-- Custom Song -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong():IsCustomSong() and not GAMESTATE:GetCurrentSong():IsLong() and not GAMESTATE:GetCurrentSong():IsMarathon()"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,0.45"
+OnCommand="diffuse,0.85,0.85,0.85,0.85"
+OffCommand="linear,1;diffusealpha,0"
+/>
+
+<!-- Here Go All of the Player Options Menu Extras. I only Added to the In The Groove Series. No Custom's This Time Around. -->
+
+<!-- Adds Color to All ITG VerTex Songs. -->
+
+<!-- 1 -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/VerTex')"
+OnCommand="diffuse,#0000D8;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.7;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/VerTex')"
+OnCommand="diffuse,#003300;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.7;rate,0.45"
+/>
+
+ <!-- 2 -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 2/VerTex^2')"
+OnCommand="diffuse,#FF0020;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.9;rate,0.45"
+/>
+
+ <!-- 3 -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 3/VerTex^3')"
+OnCommand="diffuse,#FF0020;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 3/VerTex^3')"
+OnCommand="diffuse,#0000D8;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<!-- End of VerTex's's's's's's -->
+
+<!-- Pandy! AHHHH! -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/Pandemonium')"
+OnCommand="diffuse,#FF0020;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.9;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/Pandemonium')"
+OnCommand="diffuse,#FF0000;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.9;rate,0.45"
+/>
+
+<!-- Eh, Same Above Pretty Much for Hardkore! -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 3/Disconnected Hardkore')"
+OnCommand="diffuse,#FF0000;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.9;rate,0.45"
+/>
+
+<!-- Dream To Nightmare! The Nightmare Before Christmas! BLAH! -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 3/Dream To Nightmare')"
+OnCommand="diffuse,#2365B5;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 3/Dream To Nightmare')"
+OnCommand="diffuse,#FF0020;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<!-- Adds A Nice Blue To Summer ~Speedy Mix~. =D -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove 2/Summer ~Speedy Mix~')"
+OnCommand="diffuse,#2365B5;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<!-- You Just Lost The Game! LOL -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove/The Game')"
+OnCommand="diffuse,#E4B600;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.7;rate,0.45"
+/>
+
+<!-- A Few Rebirth Goodies. (^^) -->
+
+<!-- Chromatic Bitches -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove Rebirth/Chromatic Blitz')"
+OnCommand="diffuse,#FF0000;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove Rebirth/Chromatic Blitz')"
+OnCommand="diffuse,#660066;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<!-- Epileptic Crisis -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove Rebirth/Epileptic Crisis')"
+OnCommand="diffuse,#2365B5;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove Rebirth/Epileptic Crisis')"
+OnCommand="diffuse,#FF0020;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.8;rate,0.45"
+/>
+
+<!-- ReaF -->
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove Rebirth/ReaF')"
+OnCommand="diffuse,#0000D8;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.7;rate,0.45"
+/>
+
+<Layer
+File="_shared background normal/blocks.avi"
+Condition="GAMESTATE:GetCurrentSong() and GAMESTATE:GetCurrentSong() == SONGMAN:FindSong('In The Groove Rebirth/ReaF')"
+OnCommand="diffuse,#003300;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.7;rate,0.45"
+/>
+
+</children></ActorFrame>  
+
+</children></ActorFrame>

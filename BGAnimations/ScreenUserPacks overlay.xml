@@ -1,0 +1,22 @@
+<ActorFrame>
+	<children>
+		
+	
+				<AutoActor
+					Type="BitmapText"
+					Text="Songs on card"
+					Font="_club heavy"
+					OnCommand="zoom,.5;diffuse,1,1,1,1;y,SCREEN_CENTER_Y-135;x,SCREEN_LEFT+SCREEN_WIDTH/6;linear,.8;diffusealpha,1"
+					OffCommand="linear,.4;diffusealpha,0;"
+				/>
+				
+				<AutoActor
+					Type="BitmapText"
+					Text="Songs on machine"
+					Font="_club heavy"
+					OnCommand="zoom,.5;diffuse,1,1,1,1;y,SCREEN_CENTER_Y-135;x,SCREEN_CENTER_X;linear,.8;diffusealpha,1"
+					OffCommand="linear,.4;diffusealpha,0;"
+				/>
+				
+	</children>
+</ActorFrame>

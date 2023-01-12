@@ -1,0 +1,69 @@
+<ActorFrame><children>
+	<ActorFrame InitCommand="draworder,999;x,SCREEN_CENTER_X;addy,-10;z,300;zoomx,1.05" DoOnCommand="addy,-90;zoomx,2;sleep,0.1;linear,0.3;addy,90;zoomx,1.05" FOV="30"><children>
+		<ActorFrame OnCommand="rotationy,0;zoom,0.5"><children>
+			<ActorFrame InitCommand="z,-200;rotationx,45"><children>
+				<AutoActor File="box cans.txt" />
+				<AutoActor
+					File="box lights.txt"
+					InitCommand="z,-1;diffuseshift;effectclock,beat;effectoffset,-0.7;effectcolor1,#303030;effectcolor2,#FFFFFF"
+				/>
+				<AutoActor
+					File="box flares.txt"
+					InitCommand="zbuffer,0;blend,add;diffuseshift;effectclock,beat;effectoffset,-0.7;effectcolor1,#000000;effectcolor2,#FFFFFF"
+				/>
+			</children></ActorFrame>
+		</children></ActorFrame>
+		<ActorFrame OnCommand="rotationy,0;zoom,0.5;addx,110"><children>
+			<ActorFrame InitCommand="z,-200;rotationx,45"><children>
+				<AutoActor File="box cans.txt" />
+				<AutoActor
+					File="box lights.txt"
+					InitCommand="z,-1;diffuseshift;effectclock,beat;effectoffset,0;effectcolor1,#303030;effectcolor2,#0066FF"
+				/>
+				<AutoActor
+					File="box flares.txt"
+					InitCommand="zbuffer,0;blend,add;diffuseshift;effectclock,beat;effectoffset,0;effectcolor1,#000000;effectcolor2,#0066FF"
+				/>
+			</children></ActorFrame>
+		</children></ActorFrame>
+		<ActorFrame OnCommand="rotationy,0;zoom,0.5;addx,-110"><children>
+			<ActorFrame InitCommand="z,-200;rotationx,45"><children>
+				<AutoActor File="box cans.txt" />
+				<AutoActor
+					File="box lights.txt"
+					InitCommand="z,-1;diffuseshift;effectclock,beat;effectoffset,-1.2;effectcolor1,#303030;effectcolor2,#33FF00"
+				/>
+				<AutoActor
+					File="box flares.txt"
+					InitCommand="zbuffer,0;blend,add;diffuseshift;effectclock,beat;effectoffset,-1.2;effectcolor1,#000000;effectcolor2,#33FF00"
+				/>
+			</children></ActorFrame>
+		</children></ActorFrame>
+		<ActorFrame OnCommand="rotationy,0;zoom,0.5;addx,220"><children>
+			<ActorFrame InitCommand="z,-200;rotationx,45"><children>
+				<AutoActor File="box cans.txt" />
+				<AutoActor
+					File="box lights.txt"
+					InitCommand="z,-1;diffuseshift;effectclock,beat;effectoffset,2.8;effectcolor1,#303030;effectcolor2,#FFCC33"
+				/>
+				<AutoActor
+					File="box flares.txt"
+					InitCommand="zbuffer,0;blend,add;diffuseshift;effectclock,beat;effectoffset,2.8;effectcolor1,#000000;effectcolor2,#FFCC33"
+				/>
+			</children></ActorFrame>
+		</children></ActorFrame>
+		<ActorFrame OnCommand="rotationy,0;zoom,0.5;addx,-220"><children>
+			<ActorFrame InitCommand="z,-200;rotationx,45"><children>
+				<AutoActor File="box cans.txt" />
+				<AutoActor
+					File="box lights.txt"
+					InitCommand="z,-1;diffuseshift;effectclock,beat;effectoffset,-0.4;effectcolor1,#303030;effectcolor2,#CC0000"
+				/>
+				<AutoActor
+					File="box flares.txt"
+					InitCommand="zbuffer,0;blend,add;diffuseshift;effectclock,beat;effectoffset,-0.4;effectcolor1,#000000;effectcolor2,#CC0000"
+				/>
+			</children></ActorFrame>
+		</children></ActorFrame>
+	</children></ActorFrame>
+</children></ActorFrame>

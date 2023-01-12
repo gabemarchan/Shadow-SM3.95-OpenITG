@@ -1,0 +1,13 @@
+<ActorFrame><children>
+
+<ActorFrame FOV="45" OnCommand="draworder,10"><children>
+
+<Layer
+File="blocks"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;rate,1"
+OnCommand="diffuse,0.8,1,0.8,0.5"
+/>
+
+</children></ActorFrame>  
+
+</children></ActorFrame>

@@ -1,0 +1,51 @@
+<ActorFrame
+	MadeChoiceP1MessageCommand="playcommand,GoOff"
+	MadeChoiceP2MessageCommand="playcommand,GoOff"
+	GoOffCommand=""
+> <children>
+   <AutoActor
+		File="../ScreenSelectPlayMode icon part1 choice1/outline"
+		InitCommand="Draworder,1"
+      OnCommand="diffusealpha,0;zoom,1;diffusealpha,0.2;linear,0.5;zoom,1.2;diffusealpha,0;sleep,0.3;queuecommand,On"
+		GainFocusCommand="hidden,0"
+		LoseFocusCommand="hidden,1"
+	/>
+	<AutoActor
+		File="main"
+		InitCommand="Draworder,2"
+	/>
+   <AutoActor
+		File="title"
+		InitCommand="Draworder,20"
+      OnCommand=""
+	/>
+
+	<Layer
+		File="../ScreenSelectPlayMode icon part1 choice1/mask"
+		InitCommand="zwrite,1;blend,noeffect"
+	/>
+
+	<ActorFrame
+		InitCommand="zoom,0.75;zoomx,0.68;x,-12;y,20;draworder,10;rotationz,0"
+		GainFocusCommand="pulse;effectmagnitude,1.2,1,0;effectclock,bgm;effectperiod,.5;effectdelay,.5;effectoffset,0.6"
+		LoseFocusCommand="stopeffect"
+	> <children>
+		<Layer
+			File="stopwatch"
+			InitCommand="zbuffer,1"
+		/>
+		<Layer
+			Type="ActorFrame"
+			OnCommand="x,8;y,16;rotationz,15;spin;effectmagnitude,0,0,+45;effectclock,bgm"
+		> <children>
+			<AutoActor 
+				File="hand"
+				InitCommand="zbuffer,1;horizalign,right;vertalign,bottom;x,24;y,16"
+			/>
+		</children> </Layer>
+		<Layer
+			File="center"
+			InitCommand="zbuffer,1;horizalign,right;vertalign,bottom;x,36;y,36;hidden,0"
+		/>
+	</children> </ActorFrame>
+</children> </ActorFrame>

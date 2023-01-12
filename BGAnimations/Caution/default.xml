@@ -1,0 +1,17 @@
+<ActorFrame><children>
+	<!-- read note in screenselectstyle2 overlay.xml on the out command and playmode overlay.xml for the on command -->
+	<Layer
+		File="bg"
+      InitCommand="zoom,0;diffusealpha,1"
+      CautionGoOnMessageCommand="zoom,0.75;cropright,1;sleep,0;linear,0.4;cropright,0"
+		CautionGoOffMessageCommand="cropright,0;linear,0.4;cropright,1"
+		CautionIsOnMessageCommand="zoom,0.75;cropright,0"
+   />
+	<Layer
+		File="text"
+		InitCommand="zoom,0"
+		CautionGoOnMessageCommand="zoom,0.75;diffusealpha,0;rotationy,90;sleep,0.1;decelerate,0.3;rotationy,0;diffusealpha,1"
+		CautionGoOffMessageCommand="accelerate,0.2;rotationy,-90;diffusealpha,0"
+		CautionIsOnMessageCommand="zoom,0.75;rotationy,0;diffusealpha,1"
+	/>
+</children></ActorFrame>

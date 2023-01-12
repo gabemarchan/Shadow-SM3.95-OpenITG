@@ -1,0 +1,8 @@
+<ActorFrame><children>
+   <Layer
+      Type="BitmapText"
+      Font="ScreenOptions serial number"
+      Text=""
+      InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;shadowlength,0;zoom,1"
+   />
+</children></ActorFrame>

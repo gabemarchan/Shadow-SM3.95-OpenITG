@@ -1,0 +1,47 @@
+<ActorFrame
+	MadeChoiceP1MessageCommand="playcommand,GoOff"
+	MadeChoiceP2MessageCommand="playcommand,GoOff"
+	GoOffCommand=""
+> <children>
+   <AutoActor
+		File="outline"
+		InitCommand="Draworder,1"
+      OnCommand="diffusealpha,0;zoom,1;diffusealpha,0.2;linear,0.5;zoom,1.2;diffusealpha,0;sleep,0.3;queuecommand,On"
+		GainFocusCommand="hidden,0"
+		LoseFocusCommand="hidden,1"
+	/>
+	<AutoActor
+		File="main"
+		InitCommand="Draworder,2"
+	/>
+   <AutoActor
+		File="title"
+		InitCommand="Draworder,20"
+      OnCommand=""
+	/>
+
+	<Layer
+		File="mask"
+		InitCommand="zwrite,1;blend,noeffect"
+	/>
+	<ActorFrame
+		InitCommand="zoom,0.43;x,-13;y,20;draworder,10"
+		GainFocusCommand="pulse;effectmagnitude,1.2,1,0;effectclock,bgm;effectperiod,.5;effectdelay,.5;effectoffset,0.6"
+		LoseFocusCommand="stopeffect"
+	> <children>
+
+		<Layer
+			File="../_platform home single"
+			InitCommand="zbuffer,1"
+			OnCommand="y,-132;rotationx,90"
+		/>
+
+		<Layer
+			File="../_platform home single"
+			InitCommand="zbuffer,1"
+			OnCommand="y,38;rotationx,90"
+		/>
+
+	</children> </ActorFrame>
+
+</children> </ActorFrame>

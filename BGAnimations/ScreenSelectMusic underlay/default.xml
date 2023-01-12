@@ -1,0 +1,9 @@
+<ActorFrame> <children>
+
+<ActorFrame InitCommand="draworder,10;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y"><children>
+		<Layer File="banner_dark" 
+		OnCommand="addx,500;sleep,0.1;decelerate,0.5;addx,-500" 
+		OffCommand="sleep,0.1;accelerate,0.5;addx,500"/>
+	</children></ActorFrame>
+
+</children> </ActorFrame>

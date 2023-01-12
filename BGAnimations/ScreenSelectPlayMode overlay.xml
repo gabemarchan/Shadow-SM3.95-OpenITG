@@ -1,0 +1,18 @@
+<ActorFrame><children>
+	<AutoActor File="_join overlay" />
+   <Layer
+   	File="menu timer"
+   	InitCommand="y,SCREEN_TOP+42;x,SCREEN_RIGHT-80"
+   />
+	<!-- an experiment... i want the caution text to enter in playmode but not in style during
+		  so, we dont give it an on command... rather, upon 'On' being reached here, we send the message to
+		  it to go on.
+	-->
+	<Quad
+		OnCommand="queuemessage,CautionGoOn"
+	/>
+	<Layer
+		File="caution"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-100"
+	/>
+</children></ActorFrame>

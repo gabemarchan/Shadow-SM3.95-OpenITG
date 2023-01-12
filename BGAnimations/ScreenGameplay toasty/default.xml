@@ -1,0 +1,15 @@
+<ActorFrame> <children>
+
+<Layer
+File="lol.avi"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;sleep,4,4;rate,1"
+OnCommand=""
+/>
+
+<Layer
+File="../_black"
+InitCommand="stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,0.4;sleep,4.4"
+OnCommand=""
+/>
+
+</children></ActorFrame>  

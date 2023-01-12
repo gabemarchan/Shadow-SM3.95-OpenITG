@@ -1,0 +1,44 @@
+<ActorFrame><children>
+	<Layer
+		Type="BitmapText"
+		File="_club heavy"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-120;zoom,0"
+		EndingCodeEnteredMessageCommand="settext,Good Ending Code Entered!;playcommand,Show"
+		LightsCodeEnteredMessageCommand="settext,Upper Box Lights Disabled!;playcommand,Show"
+		NoPantsCodeEnteredMessageCommand="settext,1X No Pants Code Entered!;playcommand,Show"
+		BadCodeEnteredMessageCommand="settext,Bad Ending Code Entered!;playcommand,Show"
+		CreditCodeEnteredMessageCommand="settext,Nice Try n00b!;playcommand,Show"
+		CompareCodeEnteredMessageCommand="settext,Score Comparing Enabled!;playcommand,Show"
+		ShowCommand="shadowlength,0;bounceend,0.2;zoom,1.2;sleep,1.5;bouncebegin,0.2;zoom,0"
+	/>
+<!--	These are no longer needed thanks to the icons in the corner.
+
+	<Layer
+		Type="BitmapText"
+		File="_tutorial"
+		Condition="GAMESTATE:GetCoinMode()~=COIN_MODE_FREE and GAMESTATE:GetPremium()==PREMIUM_JOINT"
+		Text="Play 2 Player Mode For 1 Credit!"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-140;zoom,0.6;diffusetopedge,0.5,0.5,0.5,1;ShadowLength,4;glowshift"
+	/>
+	<Layer
+		Type="BitmapText"
+		File="_tutorial"
+		Condition="GAMESTATE:GetCoinMode()~=COIN_MODE_FREE and GAMESTATE:GetPremium()==PREMIUM_DOUBLE"
+		Text="Play DOUBLES For 1 Credit!"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-140;zoom,0.6;diffusetopedge,0.5,0.5,0.5,1;ShadowLength,4;glowshift"
+	/> -->
+	<!-- <Layer
+		Type="BitmapText"
+		File="_eurostile outline"
+		Text="PRESS &START;"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-70;ShadowLength,2;diffuseblink;EffectPeriod,0.5;EffectColor1,1,1,1,0;EffectColor2,1,1,1,1"
+	/> -->
+	<Layer
+		Condition="GAMESTATE:GetCoinMode()~=COIN_MODE_FREE"
+		File="_join overlay"
+	/>
+	<Layer
+		Condition="GAMESTATE:GetCoinMode()==COIN_MODE_FREE"
+		File="ScreenAttract overlay"
+	/>
+</children></ActorFrame>

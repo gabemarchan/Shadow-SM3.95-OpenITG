@@ -1,0 +1,308 @@
+<ActorFrame> <children>
+	<LayerType="BitmapText"
+		Condition="GAMESTATE:GetPlayMode() == PLAY_MODE_RAVE"
+		Font="Common normal"
+		Text="@GAMESTATE:GetPlayerDisplayName(PLAYER_1)"
+		OnCommand="x,SCREEN_CENTER_X-224;y,SCREEN_TOP+53;shadowlength,0;diffuse,#000000;zoom,.5;maxwidth,180;addy,-100;sleep,0.5;decelerate,0.8;addy,+100"
+		OffCommand="accelerate,0.8;addy,-100"
+	/>
+	<Layer Type="BitmapText"
+		Condition="GAMESTATE:GetPlayMode() == PLAY_MODE_RAVE"
+		Font="Common normal"
+		Text="@GAMESTATE:GetPlayerDisplayName(PLAYER_2)"
+		OnCommand="x,SCREEN_CENTER_X+224;y,SCREEN_TOP+53;shadowlength,0;diffuse,#000000;zoom,.5;maxwidth,180;addy,-100;sleep,0.5;decelerate,0.8;addy,+100"
+		OffCommand="accelerate,0.8;addy,-100"
+	/>
+
+	<Layer Type="ActorFrame"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_TOP+24;addy,-100;sleep,0.5;queuecommand,TweenOn"
+		OffCommand="queuecommand,TweenOff"
+		ShowGameplayTopFrameMessageCommand="playcommand,TweenOn"
+		HideGameplayTopFrameMessageCommand="playcommand,TweenOff"
+		TweenOnCommand="decelerate,0.8;addy,+100"
+		TweenOffCommand="accelerate,0.8;addy,-100"
+		> <children>
+
+		<Layer
+			Type="SongMeterDisplay"
+			StreamWidth="380"
+			StreamPath="meter stream"
+		>
+			<Tip
+				File="tip"
+				OnCommand="diffuseshift;EffectColor1,1,1,1,0.6;EffectColor2,1,1,1,1.0"
+			/>
+		</Layer>
+
+		<Layer File="bpm frame"
+			   OnCommand="addy,26;zoomy,0.42;zoomx,0.65"
+				/>
+
+		<Layer File="meter frame"
+			   	/>
+
+		<Layer
+			Type="BitmapText"
+			Font="_eurostile blue glow"
+			OnCommand="addx,1;y,1;zoom,.5;shadowlength,0"
+			InitCommand="animate,0;playcommand,Update;maxwidth,730"
+			CurrentSongChangedMessageCommand="playcommand,Update"
+			UpdateCommand="%SetFromSongTitleAndCourseTitle"
+		/>
+	</children> </Layer>
+
+	<!-- Difficulty: -->
+
+	<Layer Type="ActorFrame"
+		OnCommand="sleep,0.5;queuecommand,TweenOn"
+		OffCommand="queuecommand,TweenOff"
+		ShowGameplayTopFrameMessageCommand="playcommand,TweenOn"
+		HideGameplayTopFrameMessageCommand="playcommand,TweenOff"
+		> <children>
+
+		<ActorFrame Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)" OnCommand="x,SCREEN_CENTER_X-257;y,SCREEN_TOP+25;addx,-200" TweenOnCommand="decelerate,0.8;addx,+200" TweenOffCommand="accelerate,0.8;addx,-200"><children>
+			<Actor
+				File="@THEME:GetPath(EC_GRAPHICS,'','_difficulty icons')"
+				OnCommand="animate,0;playcommand,Update"
+				CurrentStepsP1ChangedMessageCommand="playcommand,Update"
+				CurrentStepsP2ChangedMessageCommand="playcommand,Update"
+				UpdateCommand="%function(self,parent) SetDifficultyFrameFromSteps(self, PLAYER_1) end"
+			/>
+			<Actor
+				Class="DifficultyMeter"
+				Type="ScreenGameplay DifficultyMeterP1"
+				OnCommand="playcommand,Update"
+				CurrentStepsP1ChangedMessageCommand="playcommand,Update"
+				CurrentStepsP2ChangedMessageCommand="playcommand,Update"
+				UpdateCommand="%function(self) self:SetFromSteps(GAMESTATE:GetCurrentSteps(PLAYER_1)) end"
+			/>
+		</children></ActorFrame>
+
+		<ActorFrame Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)" OnCommand="x,SCREEN_CENTER_X+257;y,SCREEN_TOP+25;addx,+200" TweenOnCommand="decelerate,0.8;addx,-200" TweenOffCommand="accelerate,0.8;addx,+200"><children>
+			<Actor
+				File="@THEME:GetPath(EC_GRAPHICS,'','_difficulty icons')"
+				OnCommand="zoomx,-1;animate,0;playcommand,Update"
+				CurrentStepsP1ChangedMessageCommand="playcommand,Update"
+				CurrentStepsP2ChangedMessageCommand="playcommand,Update"
+				UpdateCommand="%function(self,parent) SetDifficultyFrameFromSteps(self, PLAYER_2) end"
+			/>
+			<Actor
+				Class="DifficultyMeter"
+				Type="ScreenGameplay DifficultyMeterP2"
+				OnCommand="playcommand,Update"
+				CurrentStepsP1ChangedMessageCommand="playcommand,Update"
+				CurrentStepsP2ChangedMessageCommand="playcommand,Update"
+				UpdateCommand="%function(self) self:SetFromSteps(GAMESTATE:GetCurrentSteps(PLAYER_2)) end"
+			/>
+
+
+</children></ActorFrame>
+
+</children> </Layer>
+
+<!-- Draw on top of the rest -->
+
+<Layer
+Type="Quad"
+OnCommand="diffuse,#000000;stretchto,SCREEN_LEFT,SCREEN_TOP,SCREEN_RIGHT,SCREEN_BOTTOM;diffusealpha,1;linear,0.3;diffusealpha,0"
+/>
+
+<Layer
+File="bar.png"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+162"
+OnCommand="zoomy,1.2;zoomtowidth,SCREEN_WIDTH;faderight,.8;fadeleft,.8;sleep,2.25;cropright,0;linear,.6;cropleft,1"
+/>
+
+<Layer
+File="_left gradient.png"
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)"
+InitCommand="x,SCREEN_LEFT;y,SCREEN_CENTER_Y+150"
+OnCommand="horizalign,left;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+<Layer
+File="_right gradient.png"
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)"
+InitCommand="x,SCREEN_RIGHT;y,SCREEN_CENTER_Y+150"
+OnCommand="horizalign,right;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1) and GAMESTATE:GetPlayMode() == PLAY_MODE_REGULAR or GAMESTATE:GetPlayMode() == PLAY_MODE_RAVE"
+Font="_club heavy"
+Text="Step Artist:"
+InitCommand="x,SCREEN_LEFT+5;y,SCREEN_CENTER_Y+170"
+OnCommand="shadowlength,2;horizalign,left;zoom,.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2) and GAMESTATE:GetPlayMode() == PLAY_MODE_REGULAR or not GAMESTATE:GetPlayMode() == PLAY_MODE_RAVE"
+Font="_club heavy"
+Text="Step Artist:"
+InitCommand="x,SCREEN_RIGHT-5;y,SCREEN_CENTER_Y+170"
+OnCommand="shadowlength,2;horizalign,right;zoom,0.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+
+<!-- Steps Description -->
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1) and not GAMESTATE:IsCourseMode()"
+Font="_club heavy"
+Text="@GetStepsDescriptionTextP1()"
+InitCommand="x,SCREEN_LEFT+5;y,SCREEN_CENTER_Y+188"
+OnCommand="maxwidth,445;shadowlength,2;horizalign,left;zoom,.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+ <Layer
+ Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2) and not GAMESTATE:IsCourseMode()"
+Font="_club heavy"
+Text="@GetStepsDescriptionTextP2()"
+InitCommand="x,SCREEN_RIGHT-5;y,SCREEN_CENTER_Y+188"
+OnCommand="maxwidth,445;shadowlength,2;horizalign,right;zoom,.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+<!-- Player Names -->
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)"
+Font="_club heavy"
+Text="P1:"
+InitCommand="@'diffuse,' .. PlayerColor(PLAYER_1)"
+OnCommand="x,SCREEN_LEFT+6;y,SCREEN_CENTER_Y+142;shadowlength,2;horizalign,left;zoom,.68;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)"
+Font="_club heavy"
+Text=":P2"
+InitCommand="@'diffuse,' .. PlayerColor(PLAYER_2)"
+OnCommand="x,SCREEN_RIGHT-4;y,SCREEN_CENTER_Y+142;shadowlength,2;horizalign,right;zoom,.68;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)"
+Font="_club heavy"
+Text="@GAMESTATE:GetPlayerDisplayName(PLAYER_1)"
+InitCommand="x,SCREEN_LEFT+42;y,SCREEN_CENTER_Y+142"
+OnCommand="shadowlength,2;horizalign,left;zoom,.65;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)"
+Font="_club heavy"
+Text="@GAMESTATE:GetPlayerDisplayName(PLAYER_2)"
+InitCommand="x,SCREEN_RIGHT-42;y,SCREEN_CENTER_Y+142"
+OnCommand="shadowlength,2;horizalign,right;zoom,.65;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+<!-- Song Title and Artist -->
+<Layer
+Font="_club heavy"
+Text="@GetSongTitle()"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+142"
+OnCommand="draworder,9999999;maxwidth,SCREEN_WIDTH/8*7-50;shadowlength,2;horizalign,center;zoom,0.6;sleep,.1;linear,.3;diffusebottomedge,#bcbcbc;diffusetopedge,#ffffff;diffusealpha,1;sleep,1.5;linear,0.3;diffusealpha,0;"
+/> 	
+
+<Layer
+Font="_club heavy"
+Text="@GetSongArtist()"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+160"
+OnCommand="draworder,9999999;maxwidth,SCREEN_WIDTH/8*6.8-50;shadowlength,2;horizalign,center;zoom,0.45;sleep,.1;linear,.3;diffusebottomedge,#bcbcbc;diffusetopedge,#ffffff;diffusealpha,1;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 	
+
+<!-- Long Version and Marathon Notices -->
+
+<Layer
+Condition="GAMESTATE:GetCurrentSong():IsLong()"
+Font="_club heavy"
+Text="2 Rounds Long"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+184"
+OnCommand="draworder,9999999;maxwidth,SCREEN_WIDTH/8*6.8;shadowlength,2;horizalign,center;zoom,0.6;sleep,.1;linear,.3;diffusebottomedge,#bcbcbc;diffusetopedge,#ffffff;diffusealpha,1;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+<Layer
+Condition="GAMESTATE:GetCurrentSong():IsMarathon()"
+Font="_club heavy"
+Text="3 Rounds Long"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+184"
+OnCommand="draworder,9999999;maxwidth,SCREEN_WIDTH/8*6.8;shadowlength,2;horizalign,center;zoom,0.6;sleep,.1;linear,.3;diffusebottomedge,#bcbcbc;diffusetopedge,#ffffff;diffusealpha,1;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 	
+
+<!-- Course Display Title -->
+
+<Layer
+Font="_club heavy"
+Text="@GetCourseTitle()"
+InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+142"
+OnCommand="draworder,9999999;maxwidth,SCREEN_WIDTH/8*7-50;shadowlength,2;horizalign,center;zoom,0.6;sleep,.1;linear,.3;diffusebottomedge,#bcbcbc;diffusetopedge,#ffffff;diffusealpha,1;sleep,1.5;linear,0.3;diffusealpha,0;"
+/> 	
+
+<!-- Course Mode Difficulty -->
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1) and GAMESTATE:IsCourseMode()"
+Font="_club heavy"
+Text="Difficulty:"
+InitCommand="x,SCREEN_LEFT+5;y,SCREEN_CENTER_Y+170"
+OnCommand="shadowlength,2;horizalign,left;zoom,.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2) and GAMESTATE:IsCourseMode()"
+Font="_club heavy"
+Text="Difficulty:"
+InitCommand="x,SCREEN_RIGHT-5;y,SCREEN_CENTER_Y+170"
+OnCommand="shadowlength,2;horizalign,right;zoom,0.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1) and GAMESTATE:IsCourseMode()"
+Font="_club heavy"
+Text="@CourseDifficulty(PLAYER_1)"
+InitCommand="x,SCREEN_LEFT+5;y,SCREEN_CENTER_Y+190"
+OnCommand="shadowlength,2;horizalign,left;zoom,.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/> 
+
+<Layer
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2) and GAMESTATE:IsCourseMode()"
+Font="_club heavy"
+Text="@CourseDifficulty(PLAYER_1)"
+InitCommand="x,SCREEN_RIGHT-5;y,SCREEN_CENTER_Y+190"
+OnCommand="shadowlength,2;horizalign,right;zoom,.55;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+<ActorFrame Condition="GAMESTATE:IsCourseMode()">
+
+<children>
+
+<!-- Course Player Gradients -->
+
+<Layer
+File="_left gradient.png"
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)"
+InitCommand="x,SCREEN_LEFT;y,SCREEN_CENTER_Y+150"
+OnCommand="horizalign,left;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+<Layer
+File="_right gradient.png"
+Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)"
+InitCommand="x,SCREEN_RIGHT;y,SCREEN_CENTER_Y+150"
+OnCommand="horizalign,right;sleep,1.5;linear,0.3;diffusealpha,0"
+/>
+
+</children></ActorFrame>
+
+<!-- Demonstration only: -->
+<Layer Class="ActorFrame" Condition="GAMESTATE:IsDemonstration()">
+
+<children>
+
+<Layer
+File="demonstration gradient"
+OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_HEIGHT;diffusealpha,0.8"
+/>
+<Layer
+File="../_dark streak"
+OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomx,SCREEN_WIDTH;zoomy,0;linear,.5;zoomy,.68"
+/>
+<Layer
+File="demonstration logo"
+OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoom,1.2;pulse;EffectMagnitude,1.0,0.9,0;effectclock,bgm;effectperiod,1"
+/>
+</children></Layer>
+
+</children> </ActorFrame>

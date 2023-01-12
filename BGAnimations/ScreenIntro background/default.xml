@@ -1,0 +1,182 @@
+<ActorFrame><children>
+   <Layer
+      File="intro"
+      Command="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_WIDTH/4*3*1.1;sleep,30;diffusealpha,0"
+   />
+   <Layer
+     File="../_green streak"
+	 Command="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomx,SCREEN_WIDTH;zoomy,0;linear,.5;zoomy,.68;sleep,3;zoomy,.68;linear,0.2;zoomy,0"
+   />
+   <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="RoXoR Games & DarkLink Present"
+      Command="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-2;ShadowLength,4;diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1;sleep,2;linear,0.5;diffusealpha,0"
+   />
+
+   <Layer
+      Class="Quad"
+      Command="x,SCREEN_RIGHT+SCREEN_WIDTH/2;y,SCREEN_TOP+110;zoomtowidth,SCREEN_WIDTH;zoomtoheight,60;diffuse,1,1,1,0.5;sleep,3;bounceend,0.5;fadeleft,0.3;faderight,0.3;x,0;linear,3;addx,100;accelerate,0.5;addx,-SCREEN_WIDTH"
+   />
+   <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="In The Groove 2 Shadow"
+      Command="x,SCREEN_LEFT+200;y,SCREEN_TOP+110;skewx,-0.2;ShadowLength,4;diffusealpha,0;sleep,3.5;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+   />
+
+   <Layer
+      File="shadow"
+      Command="x,SCREEN_CENTER_X+130;y,SCREEN_CENTER_Y+80;skewx,-0.05;diffusealpha,0;sleep,3;linear,0.5;diffusealpha,0.5;linear,3;linear,0.5;diffusealpha,0.0"
+   />
+
+   <Layer
+      Class="Quad"
+      Command="x,SCREEN_RIGHT+SCREEN_WIDTH/2;y,SCREEN_TOP+110;zoomtowidth,SCREEN_WIDTH;zoomtoheight,60;diffuse,1,1,1,0.5;sleep,11;bounceend,0.5;fadeleft,0.3;faderight,0.3;x,0;linear,3;addx,100;accelerate,0.5;addx,-SCREEN_WIDTH"
+   />
+   <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="Over 9,000 Songs"
+      Command="x,SCREEN_LEFT+200;y,SCREEN_TOP+110;skewx,-0.2;ShadowLength,4;diffusealpha,0;sleep,11.5;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+   />
+<!--      <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="IT'S OVER 9000!!!"
+      Command="x,SCREEN_LEFT+200;y,SCREEN_TOP+170;skewx,-0.2;ShadowLength,4;diffusealpha,0;sleep,11.5;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0;zoom,1.5"
+   /> -->
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-300;y,SCREEN_CENTER_Y+20;zoom,1.4;sleep,11;linear,4;addx,30"
+   ><children>
+      <Layer
+         Class="AutoActor"
+         File="135"
+         Command="horizalign,right;skewx,-0.05;diffusealpha,0;sleep,11;linear,0.5;diffusealpha,0.5;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-270;y,SCREEN_BOTTOM-200;sleep,11;linear,4;y,SCREEN_TOP+200"
+   ><children>
+      <Layer
+         Class="BitmapText"
+         Font="_eurostile blue glow"
+         Text="@GetRandomSongNames(23)"
+         Command="horizalign,left;zoom,0.8;diffusealpha,0;sleep,11;linear,0.5;diffusealpha,0.3;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>
+
+
+   <Layer
+      Class="Quad"
+      Command="x,SCREEN_RIGHT+SCREEN_WIDTH/2;y,SCREEN_TOP+110;zoomtowidth,SCREEN_WIDTH;zoomtoheight,60;diffuse,1,1,1,0.5;sleep,15;bounceend,0.5;fadeleft,0.3;faderight,0.3;x,0;linear,3;addx,100;accelerate,0.5;addx,-SCREEN_WIDTH"
+   />
+   <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="Over 30,000 Step Charts"
+      Command="x,SCREEN_LEFT+200;y,SCREEN_TOP+110;skewx,-0.2;ShadowLength,4;diffusealpha,0;sleep,15.5;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+   />
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-250;y,SCREEN_CENTER_Y-40;zoom,1.4;sleep,15;linear,4;addx,30"
+   ><children>
+      <Layer
+         Class="AutoActor"
+         File="1000"
+         Command="horizalign,right;skewx,-0.05;diffusealpha,0;sleep,15;linear,0.5;diffusealpha,0.5;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-270;y,SCREEN_BOTTOM-200;sleep,15;linear,4;y,SCREEN_TOP+200"
+   ><children>
+      <Layer
+         Class="BitmapText"
+         Font="_eurostile blue glow"
+         Text="@GetStepChartFacts()"
+         Command="horizalign,left;zoom,0.8;diffusealpha,0;sleep,15;linear,0.5;diffusealpha,0.3;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>
+   
+   
+   <Layer
+      Class="Quad"
+      Command="x,SCREEN_RIGHT+SCREEN_WIDTH/2;y,SCREEN_TOP+110;zoomtowidth,SCREEN_WIDTH;zoomtoheight,60;diffuse,1,1,1,0.5;sleep,19;bounceend,0.5;fadeleft,0.3;faderight,0.3;x,0;linear,3;addx,100;accelerate,0.5;addx,-SCREEN_WIDTH"
+   />
+   <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="Over 200 Courses & Survivals"
+      Command="x,SCREEN_LEFT+220;y,SCREEN_TOP+110;skewx,-0.2;ShadowLength,4;diffusealpha,0;sleep,19.5;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+   />
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-300;y,SCREEN_CENTER_Y+30;zoom,1.5;sleep,19;linear,4;addx,30"
+   ><children>
+      <Layer
+         Class="AutoActor"
+         File="45"
+         Command="horizalign,right;skewx,-0.05;diffusealpha,0;sleep,19;linear,0.5;diffusealpha,0.5;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-250;y,SCREEN_BOTTOM-200;sleep,19;linear,4;y,SCREEN_TOP+200"
+   ><children>
+      <Layer
+         Class="BitmapText"
+         Font="_eurostile blue glow"
+         Text="@GetRandomCourseNames(23)"
+         Command="horizalign,left;zoom,0.8;diffusealpha,0;sleep,19;linear,0.5;diffusealpha,0.3;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>  
+   
+   
+   <Layer
+      Class="Quad"
+      Command="x,SCREEN_RIGHT+SCREEN_WIDTH/2;y,SCREEN_TOP+110;zoomtowidth,SCREEN_WIDTH;zoomtoheight,60;diffuse,1,1,1,0.5;sleep,23;bounceend,0.5;fadeleft,0.3;faderight,0.3;x,0;linear,3;addx,100;accelerate,0.5;addx,-SCREEN_WIDTH"
+   />
+   <Layer
+      Class="BitmapText"
+      Font="_eurostile blue glow"
+      Text="Over 80 Modifiers"
+      Command="x,SCREEN_LEFT+200;y,SCREEN_TOP+110;skewx,-0.2;ShadowLength,4;diffusealpha,0;sleep,23.5;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+   />
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-250;y,SCREEN_CENTER_Y-20;zoom,1.5;sleep,23;linear,4;addx,30"
+   ><children>
+      <Layer
+         Class="AutoActor"
+         File="50"
+         Command="horizalign,right;skewx,-0.05;diffusealpha,0;sleep,23;linear,0.5;diffusealpha,0.5;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>
+   <Layer
+      Class="ActorFrame"
+      Command="x,SCREEN_RIGHT-250;y,SCREEN_BOTTOM-200;sleep,23;linear,4;y,SCREEN_TOP+200"
+   ><children>
+      <Layer
+         Class="BitmapText"
+         Font="_eurostile blue glow"
+         Text="@GetModifierNames(23)"
+         Command="horizalign,left;zoom,0.8;diffusealpha,0;sleep,23;linear,0.5;diffusealpha,0.3;linear,3;linear,0.5;diffusealpha,0.0"
+      />
+   </children></Layer>  
+   
+   <Layer
+      Class="Quad"
+      Command="vertalign,top;x,SCREEN_CENTER_X;y,SCREEN_TOP;zoomtowidth,SCREEN_WIDTH;zoomtoheight,(SCREEN_HEIGHT-SCREEN_WIDTH/4*3*0.705)/2;diffuse,0,0,0,1"
+   />
+   <Layer
+      Class="Quad"
+      Command="vertalign,bottom;x,SCREEN_CENTER_X;y,SCREEN_BOTTOM;zoomtowidth,SCREEN_WIDTH;zoomtoheight,(SCREEN_HEIGHT-SCREEN_WIDTH/4*3*0.705)/2;diffuse,0,0,0,1"
+   />
+   <Layer
+      Class="Quad"
+      Command="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_HEIGHT;diffusealpha,0;hibernate,29.5;linear,0.5;diffusealpha,1;linear,0.5;diffusealpha,0"
+   />
+</children></ActorFrame>

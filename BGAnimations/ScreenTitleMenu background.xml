@@ -1,0 +1,7 @@
+<ActorFrame><children>
+<Layer
+   File="732_JumpBack.mpg"
+   InitCommand="zoom,2;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;rate,2"
+   OnCommand="diffuse,0.9,0.6,0.9,0.7"
+/>
+</children></ActorFrame>
