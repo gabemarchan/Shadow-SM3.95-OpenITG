@@ -14,6 +14,7 @@
 
 <Layer Type="BitmapText" Text="Brought To You By" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
 <Layer Type="BitmapText" Text="Gabe 'DarkLink' Marchan" File="_eurostile blue glow" OnCommand="zoom,0.7;ztest,1" />
+<Layer Type="BitmapText" Text="gabemarchan.com" File="_eurostile blue glow" OnCommand="zoom,0.7;ztest,1" />
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
