@@ -856,6 +856,14 @@ end
 
 --Removes the "Unison" Option if you're playing on Doubles since it's Completely useless.
 function Doubles()
-	if GAMESTATE:PlayerUsingBothSides() then return "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20,21,22,23" end
+   if OPENITG then
+	   if GAMESTATE:PlayerUsingBothSides() then
+      return "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20,21,22,23"
+      end
 	return "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23"
+   end
+   if GAMESTATE:PlayerUsingBothSides() then
+      return "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,19,20,21,22,23"
+      end
+   return "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,21,22,23"
 end
