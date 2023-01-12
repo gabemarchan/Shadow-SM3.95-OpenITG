@@ -33,6 +33,7 @@
 <Layer Type="BitmapText" Text="Renard Queenston" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 	
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="Programming" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
 <Layer Type="BitmapText" Text="Glenn Maynard" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
@@ -40,6 +41,7 @@
 <Layer Type="BitmapText" Text="Mark Cannon" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="Pat McIlroy" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="ITG 3 Step Artists" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
@@ -70,6 +72,7 @@
 <Layer Type="BitmapText" Text="Ryan McKanna" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="Producer" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
 
@@ -88,22 +91,25 @@
 <Layer Type="BitmapText" Text="Gabe Marchan" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="Special Thanks to:" File="_eurostile blue glow" OnCommand="zoom,0.6;diffuse,#ffa800;ztest,1" />
+
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer File="_thanks/_bx" OnCommand="ztest,1;zoom,.8;" />
+
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.4;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="Boxorroxors" File="_eurostile blue glow" OnCommand="zoom,0.6;diffuse,#ffa800;ztest,1" />
 <Layer Type="BitmapText" Text="www.boxorroxors.net" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#ddf3ff;ztest,1" />
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.4;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+
 <Layer File="_thanks/_sci" OnCommand="ztest,1" />
 
-
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="SCI Recordings!" File="_eurostile blue glow" OnCommand="zoom,0.6;diffuse,#ffa800;ztest,1" />
@@ -111,43 +117,38 @@
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer File="_thanks/_itgf" OnCommand="ztest,1;zoom,.7;" />
+<Layer File="_thanks/_itgf" OnCommand="ztest,1;zoom,0.7;" />
+
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.4;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="ITGfreak/Rhythmatic.net" File="_eurostile blue glow" OnCommand="zoom,0.6;diffuse,#ffa800;ztest,1" />
 <Layer Type="BitmapText" Text="www.rhythmatic.net" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#ddf3ff;ztest,1" />
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
+<Layer File="_thanks/_gs" OnCommand="ztest,1;zoom,0.7;" />
 
-<Layer File="_thanks/_gs" OnCommand="ztest,1;zoom,.7;" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.4;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="GrooveStats" File="_eurostile blue glow" OnCommand="zoom,0.6;diffuse,#ffa800;ztest,1" />
 <Layer Type="BitmapText" Text="www.groovestats.com" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#ddf3ff;ztest,1" />
 
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
-<Layer File="_thanks/_rx" OnCommand="ztest,1;zoom,.7;" />
+<Layer File="_thanks/_rx" OnCommand="ztest,1;zoom,0.7;" />
+
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.4;diffuse,#FFFFFF;ztest,1" />
 
 <Layer Type="BitmapText" Text="RoXoR" File="_eurostile blue glow" OnCommand="zoom,0.6;diffuse,#ffa800;ztest,1" />
 <Layer Type="BitmapText" Text="www.roxorgames.com" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#ddf3ff;ztest,1" />
 
-
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.9;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="THANK YOU FOR PLAYING!" File="_eurostile blue glow" OnCommand="zoomx,0.8;zoomy,0.7;diffuse,#FFFFFF;ztest,1" />
 </children>  <!-- JESUS -EATS- THE LITTLE CHILDREN /* -->
 </BGAnimation>
