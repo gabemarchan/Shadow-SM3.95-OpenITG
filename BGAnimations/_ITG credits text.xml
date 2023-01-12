@@ -26,29 +26,6 @@
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
-<Layer Type="BitmapText" Text="Theme Graphics/Coding" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
-<Layer Type="BitmapText" Text="Dominick Renzetti" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="Felipe Valladares" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="A.J. Kung" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="Jason Bolt" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
-<Layer Type="BitmapText" Text="ITG3 Song/Course Graphics" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
-<Layer Type="BitmapText" Text="Dominick Renzetti" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="N. Colley" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="M.J. Quigley" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="Ryan McKanna" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="Matt Puls" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="Heather Dority" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
-<Layer Type="BitmapText" Text="ITG 3 Courses" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
-<Layer Type="BitmapText" Text="Gabe Marchan" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
 <Layer Type="BitmapText" Text="Audio" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
 <Layer Type="BitmapText" Text="Kyle Ward" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="John Mendenhall" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
