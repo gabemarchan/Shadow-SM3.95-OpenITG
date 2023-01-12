@@ -29,11 +29,4 @@
       InitCommand="x,SCREEN_CENTER_X+282;y,SCREEN_CENTER_Y-213;shadowlength,2;horizalign,right;wrapwidthpixels,1000;zoom,0.5"
       OnCommand="diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
    />
-<!--   <Layer
-      Type="BitmapText"
-      Font="_eurostile outline"
-      Text="@'Machine Owned And Modded By DarkLink'"
-      InitCommand="x,SCREEN_CENTER_X-296;y,SCREEN_CENTER_Y-172;shadowlength,0;horizalign,left;zoom,0.65"
-      OnCommand="diffusealpha,0;sleep,0.5;linear,0.5;diffusealpha,1"
-   /> -->
 </children></ActorFrame>
