@@ -79,13 +79,6 @@
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 
-<Layer Type="BitmapText" Text="Machine Locations" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
-<Layer Type="BitmapText" Text="Galaxy Comics - IL" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="Gigawatts Gaming Center - IL" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-<Layer Type="BitmapText" Text="The Office - IL" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
-<Layer Type="BitmapText" Text="" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-
 <Layer Type="BitmapText" Text="Hardware Support" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
 <Layer Type="BitmapText" Text="Mark Cannon" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 <Layer Type="BitmapText" Text="Pat McIlroy" File="_eurostile blue glow" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
