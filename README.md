@@ -4,7 +4,7 @@
 
 The Shadow Theme is a StepMania 3.95/OpenITG compatible theme for the In The Groove (ITG) community.
 
-This is by no means a "good" theme, but I put a lot of time and energy into building it years ago, and learned a fair bit about design and programming from it. I eventually moved on to working on the ITG 3 Theme, so definitely check that one out as well. https://github.com/openitg/itg3theme 
+This is by no means a "good" theme, but an interesting one with a few fun features and easter eggs. I put a lot of time and energy into building it years ago, and learned a bit about design and programming from it. I eventually moved on to working on the ITG 3 Theme, so definitely check that one out as well. https://github.com/openitg/itg3theme 
 
 The Shadow Theme is based on GRIM.657's Shadow Theme, and has many custom and backported features from the ITG 3 Theme. I've made a few improvements to it and fixed any major compatibility issues before making it public, so hopefully you'll have an enjoyable experience.
 
